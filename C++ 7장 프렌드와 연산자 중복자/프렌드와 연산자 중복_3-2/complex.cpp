@@ -11,7 +11,7 @@ Complex::Complex() : real(0), img(0) {}                 //기본 생성자
 
 void Complex::show(){cout << real << " + " << img << "j" << endl;}  //멤버함수 정의
 
-Complex Complex::operator*(Complex b){   //프렌드 함수 정의
+Complex Complex::operator*(Complex b){   
     Complex temp;                  //객체 생성
     temp.real = this->real*b.real;     //값 초기화
     temp.img = this->img*b.img;        //값 초기화
