@@ -10,6 +10,6 @@ public:
 	Complex();
 	Complex(int real, int img);
 	void show();
-	Complex operator*(Complex b);	//프렌드 함수 선언
+	Complex operator*(Complex b);
 };
 #endif                                                                
