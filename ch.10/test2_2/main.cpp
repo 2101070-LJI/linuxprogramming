@@ -6,12 +6,16 @@ class Container{
     int x;
 public:
     Container(int i);
+    ~Container();
     void set(int i, T a);
     T get(int i);
 };
 
 template <typename T>
 Container<T>::Container(int i){ x=i; data=new T[i];}
+
+template <typename T>
+Container<T>::~Container(){delete []data;}
 
 template <typename T>
 void Container<T>::set(int i, T a){
